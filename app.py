@@ -12,8 +12,9 @@ def index():
      out = "<!DOCTYPE html>" \
            "<html>" \
            "<body style=\"background-color:powderblue;\">" \
-           "<h1>This is a heading</h1>" \
-           "<p>This is a paragraph.</p>" \
+           "<h1>Мій перший сайт!</h1>" \
+           "<p>Тут буде текст...</p>" \
+           "<p>Тут теж буде текст...</p>"
            "</body>" \
            "</html>" \
            "<br /><P>"
