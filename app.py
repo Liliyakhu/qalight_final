@@ -3,16 +3,18 @@ import time
 
 app = Flask(__name__)
 
+# @app.route('/')
+# def index():
+#     return '<img src="/home/korvin/PycharmProjects/My_site_2/pic_trulli.jpg" alt="Trulli" width="500" height="333">'
+
 @app.route('/')
 def index():
-    return '<img src="/home/korvin/PycharmProjects/My_site_2/pic_trulli.jpg" alt="Trulli" width="500" height="333">'
-
-
-# def index():
-#     out = "<h2>Скасувала вокал :((((((</h2><img src="pic_trulli.jpg" alt="Trulli" width="500" height="333"><br /><P>"
-#     out += str( time.time() )
-#     out += "</P>"
-#     return out
+     out = "<h1>Мій перший сайт!</h1>" \
+           "<h4>Тут буде якийсь текст...</h1>" \
+           "<br /><P>"
+     out += str( time.time() )
+     out += "</P>"
+     return out
 
 @app.route('/blog')
 def blog():
