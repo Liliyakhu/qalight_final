@@ -9,8 +9,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-     out = "<h1>Мій перший сайт!</h1>" \
-           "<h4>Тут буде якийсь текст...</h1>" \
+     out = "<!DOCTYPE html>" \
+           "<html>" \
+           "<body style=\"background-color:powderblue;\">" \
+           "<h1>This is a heading</h1>" \
+           "<p>This is a paragraph.</p>" \
+           "</body>" \
+           "</html>" \
            "<br /><P>"
      out += str( time.time() )
      out += "</P>"
