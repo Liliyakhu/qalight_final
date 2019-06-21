@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    out = "<h2>Скасувала вокал :((((((</h2><br /><P>"
+    out = "<h2>Скасувала вокал :((((((" \
+          "" \
+          "</h2><br /><P>"
     out += str( time.time() )
     out += "</P>"
     return out
@@ -13,6 +15,8 @@ def index():
 @app.route('/blog')
 def blog():
     return "<h2>My blog.</h2>"
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
