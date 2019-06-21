@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    out = "<h2>Урааааа!</h2><br /><P>"
+    out = "<h2>Урааааа!!!!!!!!!!</h2><br /><P>"
     out += str( time.time() )
     out += "</P>"
     return out
