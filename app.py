@@ -5,10 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    out = "<h2>Скасувала вокал :((((((</h2><br /><P>"
+    out = "<h2>Скасувала вокал :((((((</h2><img src="pic_trulli.jpg" alt="Trulli" width="500" height="333"><br /><P>"
     out += str( time.time() )
     out += "</P>"
-    out += "<img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">"
     return out
 
 @app.route('/blog')
