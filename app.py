@@ -9,18 +9,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-     out = "<!DOCTYPE html>" \
-           "<html>" \
-           "<body style=\"background-color:powderblue;\">" \
-           "<h1>Мій перший сайт!</h1>" \
-           "<p>Тут буде текст...</p>" \
-           "<p>Тут теж буде текст...</p>"\
-           "</body>" \
-           "</html>" \
-           "<br /><P>"
-     out += str( time.time() )
-     out += "</P>"
-     return out
+    a = 4
+    b = 5
+    c = a * b
+     # out = '<!DOCTYPE html><html><head><meta charset="utf-8">' \
+     #       '<meta name="viewport" content="width=device-width, initial-scale=1"><title>Hello Bulma!</title>' \
+     #       '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">' \
+     #       '<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script></head><body>' \
+     #       '<section class="section"><div class="container"><h1 class="title">'
+     # out += 'Hello guest</h1><p class="button is-primary">'
+     # out += str( time.time() )
+     # out += "</p></div></section></body></html>"
+     return c
 
 @app.route('/blog')
 def blog():
