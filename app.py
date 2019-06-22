@@ -20,7 +20,7 @@ def index():
     # out += 'Hello guest</h1><p class="button is-primary">'
     # out += str( time.time() )
     # out += "</p></div></section></body></html>"
-    return c
+    return str(c)
 
 @app.route('/blog')
 def blog():
